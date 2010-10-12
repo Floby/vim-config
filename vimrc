@@ -1,7 +1,7 @@
 "pathogen
 filetype off
 call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+"call pathogen#helptags()
 set nocp "http://www.guckes.net/vim/setup.html
 filetype plugin indent on
 
