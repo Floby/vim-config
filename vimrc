@@ -17,11 +17,6 @@ set shiftwidth=4
 set softtabstop=4
 set nowrap
 
-"theme I'll try to get used to it, but I really like
-"the bold look on non-256color terminals :/
-color xoria256
-
-
 "get out of insert mode more quickly
 "you'd have to be really unlucky to
 "have to type "kj" in a real world
@@ -52,4 +47,10 @@ map <unique> <Leader>kp <Esc>:let g:twitterpassword=inputsecret('password? ')<cr
 map <unique> <Leader>kw <Esc>:execute 'TwitterStatusUpdate ' . inputdialog('Enter a twitter status message:')<cr>
 map <unique> <Leader>kf <Esc>:TwitterFriendsTimeline<cr>
 
+
+"theme I'll try to get used to it, but I really like
+"the bold look on non-256color terminals :/
+color xoria256
+"this has moved here so 
+"everything before it is executed
 
