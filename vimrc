@@ -4,7 +4,7 @@ set nocp "http://www.guckes.net/vim/setup.html
 filetype off
 call pathogen#runtime_append_all_bundles()
 "call pathogen#helptags() "call this when installing new plugins
-filetype plugin indent on
+filetype plugin on
 
 
 set number
