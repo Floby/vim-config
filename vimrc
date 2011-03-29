@@ -4,6 +4,9 @@ call pathogen#runtime_append_all_bundles()
 "call pathogen#helptags() "call this when installing new plugins 
 filetype plugin on
 
+"look for per directory .exrc files
+set exrc
+
 set nocp "http://www.guckes.net/vim/setup.html
 
 set encoding=utf-8
