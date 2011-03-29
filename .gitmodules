@@ -1,4 +1,10 @@
-[submodule "bundle/command-t"]
-	path = bundle/command-t
+[submodule "bundle-available/command-t"]
+	path = bundle-available/command-t
 	url = http://github.com/wincent/Command-T.git
 
+[submodule "bundle-available/rails"]
+	path = bundle-available/rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle-available/snipmate-nodejs"]
+	path = bundle-available/snipmate-nodejs
+	url = https://Floby@github.com/Floby/snipmate-nodejs.git
