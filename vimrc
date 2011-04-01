@@ -24,7 +24,6 @@ set number
 set title
 syntax on
 set mouse=
-set background=dark
 
 " indenting http://tedlogan.com/techblog3.html
 set autoindent 
@@ -71,6 +70,7 @@ map <unique> <Leader>kf <Esc>:TwitterFriendsTimeline<cr>
 
 "theme I'll try to get used to it, but I really like
 "the bold look on non-256color terminals :/
+set background=dark
 color xoria256
 "this has moved here so 
 "everything before it is executed
