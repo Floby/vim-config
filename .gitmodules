@@ -11,3 +11,6 @@
 [submodule "bundle-available/solarized-colors"]
 	path = bundle-available/solarized-colors
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle-available/fugitive"]
+	path = bundle-available/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
