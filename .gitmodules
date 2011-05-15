@@ -14,3 +14,6 @@
 [submodule "bundle-available/fugitive"]
 	path = bundle-available/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle-available/ack"]
+	path = bundle-available/ack
+	url = https://github.com/mileszs/ack.vim.git
