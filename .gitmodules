@@ -19,4 +19,4 @@
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle-available/css-color"]
 	path = bundle-available/css-color
-	url = https://github.com/skammer/vim-css-color.git
+	url = git@github.com:floby/vim-css-color.git
