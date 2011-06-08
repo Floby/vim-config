@@ -49,8 +49,6 @@ nnoremap <silent> <C-Down> :.m+<CR>
 "bouger la ligne vers le haut
 nnoremap <silent> <C-Up> :-m.<CR>k
 
-"folding : repère les bloc du langage à plier
-set foldmethod=syntax
 "
 "snipMate
 let g:snips_author = 'Florent Jaby'
@@ -58,7 +56,10 @@ let g:snips_author = 'Florent Jaby'
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
-
+"xml html
+let g:xml_syntax_folding = 1
+"folding : repère les bloc du langage à plier
+set foldmethod=syntax
 
 "twitter shortcuts   
 let g:twitterusername='floby'
