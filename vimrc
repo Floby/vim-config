@@ -73,6 +73,7 @@ map <unique> <Leader>kf <Esc>:TwitterFriendsTimeline<cr>
 "the bold look on non-256color terminals :/
 set background=dark
 color xoria256
+"colorscheme solarized
 "this has moved here so 
 "everything before it is executed
 
