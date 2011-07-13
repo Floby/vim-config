@@ -15,9 +15,9 @@ set sidescrolloff=5
 " in vim 7.3"
 " http://vim.wikia.com/wiki/Backspace_and_delete_problems
 set backspace=2 "broken after pugrading to 7.3 
-set relativenumber "See last line"
+"set relativenumber "See last line"
 set undofile
-set colorcolumn=80
+set colorcolumn=120
 
 
 set number
@@ -78,4 +78,4 @@ color xoria256
 "everything before it is executed
 
 "because it doesn't work earlier"
-set relativenumber
+"set relativenumber
