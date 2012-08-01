@@ -593,19 +593,6 @@ function! SkipMatch() " {{{
 endfun
 " }}}
 
-" Check filetype == php before automatically creating (fast) folds {{{1
-function! s:CheckAutocmdEnablePHPFold()
-    if &filetype == "php" && ! g:DisableAutoPHPFolding
-        call s:EnableFastPHPFolds()
-    endif
-endfunction
-" }}}
-
-" Call CheckAutocmdEnablePHPFold on BufReadPost {{{1
-augroup SetPhpFolds
-    au!
-    au BufReadPost * call s:CheckAutocmdEnablePHPFold()
-augroup END
-" }}}
+EnableFastPHPFolds
 
 " vim:ft=vim:foldmethod=marker:nowrap:tabstop=4:shiftwidth=4
