@@ -77,5 +77,9 @@ color xoria256
 "this has moved here so 
 "everything before it is executed
 
+set wildignore+=.git
+set wildignore+=node_modules
+
+
 "because it doesn't work earlier"
 "set relativenumber
