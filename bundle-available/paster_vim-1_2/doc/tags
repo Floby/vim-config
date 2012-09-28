@@ -1,0 +1,6 @@
+paster-about	paster.txt	/*paster-about*
+paster-configuration	paster.txt	/*paster-configuration*
+paster-features	paster.txt	/*paster-features*
+paster-requirements	paster.txt	/*paster-requirements*
+paster-usage	paster.txt	/*paster-usage*
+paster.vim	paster.txt	/*paster.vim*

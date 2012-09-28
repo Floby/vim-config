@@ -81,5 +81,9 @@ set wildignore+=.git
 set wildignore+=node_modules
 
 
+
+" pastbin conf
+
+
 "because it doesn't work earlier"
 "set relativenumber
