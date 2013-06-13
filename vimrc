@@ -3,6 +3,7 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 "call pathogen#helptags() "call this when installing new plugins 
 filetype plugin on
+filetype indent on
 
 "look for per directory .exrc files
 set exrc
@@ -23,6 +24,9 @@ set colorcolumn=120
 set number
 set title
 syntax on
+highlight TrailingWhitespace ctermbg=red guibg=red
+"syntax match TrailingWhitespace /\s\+$/
+autocmd Syntax * syn match TrailingWhitespace /\s\+$/
 set mouse=
 
 " indenting http://tedlogan.com/techblog3.html
@@ -32,8 +36,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set nowrap " kikoo (lol)"
-syntax match Tab /\t/
-hi Tab cterm=underline ctermbg=grey
 
 "get out of insert mode more quickly
 "you'd have to be really unlucky to
@@ -87,3 +89,4 @@ set wildignore+=node_modules
 
 "because it doesn't work earlier"
 "set relativenumber
+
