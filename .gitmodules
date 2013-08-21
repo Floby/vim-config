@@ -26,3 +26,6 @@
 [submodule "bundle-available/tern_for_vim"]
 	path = bundle-available/tern_for_vim
 	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "bundle-available/handlebars"]
+	path = bundle-available/handlebars
+	url = https://github.com/nono/vim-handlebars.git
