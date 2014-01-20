@@ -32,9 +32,9 @@ set mouse=
 " indenting http://tedlogan.com/techblog3.html
 set autoindent 
 set expandtab "hitting tab insert spaces instead of <Tab>
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set nowrap " kikoo (lol)"
 
 "get out of insert mode more quickly
