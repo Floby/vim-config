@@ -29,3 +29,6 @@
 [submodule "bundle-available/handlebars"]
 	path = bundle-available/handlebars
 	url = https://github.com/nono/vim-handlebars.git
+[submodule "bundle-available/vim-less"]
+	path = bundle-available/vim-less
+	url = https://github.com/groenewege/vim-less.git
