@@ -32,3 +32,6 @@
 [submodule "bundle-available/vim-less"]
 	path = bundle-available/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle-available/vim-coffee-script"]
+	path = bundle-available/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
