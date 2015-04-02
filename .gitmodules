@@ -20,6 +20,18 @@
 [submodule "bundle-available/css-color"]
 	path = bundle-available/css-color
 	url = git@github.com:floby/vim-css-color.git
-[submodule "bundle-available/zencoding"]
-	path = bundle-available/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
+[submodule "bundle-available/tern_for_vim"]
+	path = bundle-available/tern_for_vim
+	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "bundle-available/handlebars"]
+	path = bundle-available/handlebars
+	url = https://github.com/nono/vim-handlebars.git
+[submodule "bundle-available/vim-less"]
+	path = bundle-available/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle-available/vim-coffee-script"]
+	path = bundle-available/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle-available/emmet"]
+	path = bundle-available/emmet
+	url = https://github.com/mattn/emmet-vim.git

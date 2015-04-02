@@ -3,6 +3,7 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 "call pathogen#helptags() "call this when installing new plugins 
 filetype plugin on
+filetype indent on
 
 "look for per directory .exrc files
 set exrc
@@ -16,24 +17,25 @@ set sidescrolloff=5
 " http://vim.wikia.com/wiki/Backspace_and_delete_problems
 set backspace=2 "broken after pugrading to 7.3 
 "set relativenumber "See last line"
-"set undofile
-"set colorcolumn=80
+set undofile
+set colorcolumn=120
 
 
 set number
 set title
 syntax on
+highlight TrailingWhitespace ctermbg=red guibg=red
+"syntax match TrailingWhitespace /\s\+$/
+autocmd Syntax * syn match TrailingWhitespace /\s\+$/
 set mouse=
 
 " indenting http://tedlogan.com/techblog3.html
 set autoindent 
 set expandtab "hitting tab insert spaces instead of <Tab>
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set nowrap " kikoo (lol)"
-syntax match Tab /\t/
-hi Tab cterm=underline ctermfg=grey
 
 "get out of insert mode more quickly
 "you'd have to be really unlucky to
@@ -77,5 +79,14 @@ color xoria256
 "this has moved here so 
 "everything before it is executed
 
+set wildignore+=.git
+set wildignore+=node_modules
+
+
+
+" pastbin conf
+
+
 "because it doesn't work earlier"
 "set relativenumber
+
