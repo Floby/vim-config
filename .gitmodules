@@ -20,9 +20,6 @@
 [submodule "bundle-available/css-color"]
 	path = bundle-available/css-color
 	url = git@github.com:floby/vim-css-color.git
-[submodule "bundle-available/zencoding"]
-	path = bundle-available/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
 [submodule "bundle-available/tern_for_vim"]
 	path = bundle-available/tern_for_vim
 	url = https://github.com/marijnh/tern_for_vim.git
