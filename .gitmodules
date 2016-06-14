@@ -35,3 +35,6 @@
 [submodule "bundle-available/emmet"]
 	path = bundle-available/emmet
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle-available/elm"]
+	path = bundle-available/elm
+	url = https://github.com/lambdatoast/elm.vim.git
