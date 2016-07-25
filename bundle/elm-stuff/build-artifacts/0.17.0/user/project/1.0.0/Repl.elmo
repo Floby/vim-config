@@ -1,0 +1,25 @@
+var _user$project$Repl$under70 = function (_p0) {
+	var _p1 = _p0;
+	return _elm_lang$core$Native_Utils.cmp(_p1.age, 70) < 0;
+};
+var _user$project$Repl$t_s_o_l = {ctor: '_Tuple0'};
+var _user$project$Repl$printPredicate = F2(
+	function (predicate, param) {
+		return predicate(param) ? 'it was true' : 'it was not true';
+	});
+var _user$project$Repl$printUnder70 = _user$project$Repl$printPredicate(_user$project$Repl$under70);
+var _user$project$Repl$point = {x: 3, y: 4};
+var _user$project$Repl$over9000 = function (powerLevel) {
+	return (_elm_lang$core$Native_Utils.cmp(powerLevel, 9000) > 0) ? 'it\'s over 9000!!!' : 'meh';
+};
+var _user$project$Repl$numbers = _elm_lang$core$Native_List.fromArray(
+	[1, 2, 3]);
+var _user$project$Repl$isNegative = function (n) {
+	return _elm_lang$core$Native_Utils.cmp(n, 0) < 0;
+};
+var _user$project$Repl$printIsNegative = _user$project$Repl$printPredicate(_user$project$Repl$isNegative);
+var _user$project$Repl$double = function (n) {
+	return n * 2;
+};
+var _user$project$Repl$bill = {name: 'Gates', age: 57};
+var _user$project$Repl$d_e_l_t_r_o_n_3_0_3_0 = _user$project$Repl$bill;
