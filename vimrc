@@ -10,6 +10,7 @@ set exrc
 
 set nocp "http://www.guckes.net/vim/setup.html
 
+set hlsearch
 set encoding=utf-8
 set scrolloff=3
 set sidescrolloff=5
