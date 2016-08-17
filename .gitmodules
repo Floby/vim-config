@@ -38,3 +38,6 @@
 [submodule "bundle-available/elm"]
 	path = bundle-available/elm
 	url = https://github.com/lambdatoast/elm.vim.git
+[submodule "bundle-available/vim-es6"]
+	path = bundle-available/vim-es6
+	url = https://github.com/isRuslan/vim-es6.git
