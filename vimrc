@@ -1,9 +1,11 @@
 "pathogen
 filetype off
 call pathogen#runtime_append_all_bundles()
+
 "call pathogen#helptags() "call this when installing new plugins 
 filetype plugin on
 filetype indent on
+set diffopt+=vertical
 
 "look for per directory .exrc files
 set exrc
@@ -90,4 +92,3 @@ set wildignore+=node_modules
 
 "because it doesn't work earlier"
 "set relativenumber
-
