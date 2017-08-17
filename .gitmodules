@@ -41,3 +41,12 @@
 [submodule "bundle-available/vim-es6"]
 	path = bundle-available/vim-es6
 	url = https://github.com/isRuslan/vim-es6.git
+[submodule "bundle-available/syntastic"]
+	path = bundle-available/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "bundle-available/syntastic-local-eslint"]
+	path = bundle-available/syntastic-local-eslint
+	url = https://github.com/mtscout6/syntastic-local-eslint.vim.git
+[submodule "bundle-available/typescript"]
+	path = bundle-available/typescript
+	url = https://github.com/leafgarland/typescript-vim.git
