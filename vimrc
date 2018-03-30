@@ -27,9 +27,12 @@ set colorcolumn=120
 set number
 set title
 syntax on
-highlight TrailingWhitespace ctermbg=red guibg=red
-"syntax match TrailingWhitespace /\s\+$/
+"Highlight trailing whitespaces
 autocmd Syntax * syn match TrailingWhitespace /\s\+$/
+autocmd Syntax * highlight def link TrailingWhitespace Error
+"Remove trailing whitespaces for certain files when saving
+autocmd FileType c,cpp,java,javascript,php,groovy,tf autocmd BufWritePre <buffer> %s/\s\+$//e
+
 set mouse=
 
 " indenting http://tedlogan.com/techblog3.html
