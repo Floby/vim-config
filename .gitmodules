@@ -50,3 +50,6 @@
 [submodule "bundle-available/vim-ember-hbs"]
 	path = bundle-available/vim-ember-hbs
 	url = git@github.com:joukevandermaas/vim-ember-hbs.git
+[submodule "bundle-available/vim-terraform"]
+	path = bundle-available/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
