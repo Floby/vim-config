@@ -87,6 +87,8 @@ color xoria256
 
 set wildignore+=.git
 set wildignore+=node_modules
+set wildignore+=dist
+set wildignore+=coverage
 
 
 
