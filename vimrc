@@ -31,7 +31,7 @@ syntax on
 autocmd Syntax * syn match TrailingWhitespace /\s\+$/
 autocmd Syntax * highlight def link TrailingWhitespace Error
 "Remove trailing whitespaces for certain files when saving
-autocmd FileType c,cpp,java,javascript,php,groovy,tf autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cpp,java,javascript,php,groovy,tf,typescript autocmd BufWritePre <buffer> %s/\s\+$//e
 
 set mouse=
 
@@ -42,6 +42,9 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set nowrap " kikoo (lol)"
+
+noremap <silent> <S-PageDown> <Esc>:tabm +1<CR>
+noremap <silent> <S-PageUp> <Esc>:tabm -1<CR>
 
 "get out of insert mode more quickly
 "you'd have to be really unlucky to
@@ -91,7 +94,16 @@ set wildignore+=dist
 set wildignore+=coverage
 set wildignore+=tmp
 
+" ALE configuration
+let g:ale_fixers = {
+\ 'javascript': ['eslint'],
+\ 'typescript': ['tslint']
+\}
+nmap <silent> µ <Esc>:ALEGoToDefinitionInTab<cr>
+nmap <silent> K <Esc>:ALEHover<cr>
 
+" ALE fix mapping
+nmap FF <Esc>:ALEFix<cr>
 
 " pastbin conf
 
