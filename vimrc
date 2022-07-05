@@ -9,7 +9,7 @@ set diffopt+=vertical
 
 "look for per directory .exrc files
 set exrc
-
+set ruler
 set nocp "http://www.guckes.net/vim/setup.html
 
 set hlsearch
@@ -96,8 +96,12 @@ set wildignore+=tmp
 
 " ALE configuration
 let g:ale_fixers = {
+\ 'rust': ['rustfmt'],
+\ 'yaml': ['prettier'],
 \ 'javascript': ['eslint'],
-\ 'typescript': ['tslint']
+\ 'typescript': ['tslint', 'eslint'],
+\ 'typescriptreact': ['tslint', 'eslint'],
+\ 'vue': ['prettier']
 \}
 nmap <silent> µ <Esc>:ALEGoToDefinitionInTab<cr>
 nmap <silent> K <Esc>:ALEHover<cr>
@@ -105,8 +109,12 @@ nmap <silent> K <Esc>:ALEHover<cr>
 " ALE fix mapping
 nmap FF <Esc>:ALEFix<cr>
 
+" ALE java stuff
+let g:ale_java_javalsp_executable = '/home/floby/dev/vim-plugins/java-language-server/dist/lang_server_linux.sh'
+
 " pastbin conf
 
 
 "because it doesn't work earlier"
 "set relativenumber
+
