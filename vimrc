@@ -1,8 +1,37 @@
+" # VIM-PLUG INSTALL
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" # VIM-PLUG SETUP
+call plug#begin()
+Plug 'junegunn/fzf'
+Plug 'Floby/snipmate-nodejs'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-fugitive'
+Plug 'floby/vim-css-color'
+Plug 'nono/vim-handlebars'
+Plug 'groenewege/vim-less'
+Plug 'mattn/emmet-vim'
+Plug 'isRuslan/vim-es6'
+Plug 'leafgarland/typescript-vim'
+Plug 'joukevandermaas/vim-ember-hbs'
+Plug 'hashivim/vim-terraform'
+Plug 'dense-analysis/ale'
+Plug 'vim-scripts/SyntaxRange'
+Plug 'aklt/plantuml-syntax'
+call plug#end()
+
+
 "pathogen
 filetype off
-call pathogen#runtime_append_all_bundles()
+"call pathogen#runtime_append_all_bundles()
 
 "call pathogen#helptags() "call this when installing new plugins 
+"
 filetype plugin on
 filetype indent on
 set diffopt+=vertical
@@ -72,13 +101,6 @@ let g:xml_syntax_folding = 1
 "folding : repère les bloc du langage à plier
 set foldmethod=syntax
 
-"twitter shortcuts   
-let g:twitterusername='floby'
-let g:twitterpassword=''
-map <unique> <Leader>kp <Esc>:let g:twitterpassword=inputsecret('password? ')<cr>
-map <unique> <Leader>kw <Esc>:execute 'TwitterStatusUpdate ' . inputdialog('Enter a twitter status message:')<cr>
-map <unique> <Leader>kf <Esc>:TwitterFriendsTimeline<cr>
-
 
 "theme I'll try to get used to it, but I really like
 "the bold look on non-256color terminals :/
@@ -111,6 +133,10 @@ nmap FF <Esc>:ALEFix<cr>
 
 " ALE java stuff
 let g:ale_java_javalsp_executable = '/home/floby/dev/vim-plugins/java-language-server/dist/lang_server_linux.sh'
+
+
+" FZF bindings
+nmap <leader>t <Esc>:FZF<cr>
 
 " pastbin conf
 
