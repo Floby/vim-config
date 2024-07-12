@@ -6,9 +6,15 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" # VIM-PLUG SETUP
+syntax enable
+filetype plugin on
+filetype indent on
+
+
+"# VIM-PLUG SETUP
 call plug#begin()
-Plug 'junegunn/fzf'
+Plug 'preservim/nerdtree'
+Plug 'junegunn/fzf', { 'tag': '0.53.0' }
 Plug 'Floby/snipmate-nodejs'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
@@ -22,18 +28,11 @@ Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'hashivim/vim-terraform'
 Plug 'dense-analysis/ale'
 Plug 'vim-scripts/SyntaxRange'
+Plug 'tell-k/vim-quick-radon'
+"Plug 'rubik/vim-radon'
 Plug 'aklt/plantuml-syntax'
 call plug#end()
 
-
-"pathogen
-filetype off
-"call pathogen#runtime_append_all_bundles()
-
-"call pathogen#helptags() "call this when installing new plugins 
-"
-filetype plugin on
-filetype indent on
 set diffopt+=vertical
 
 "look for per directory .exrc files
@@ -72,8 +71,8 @@ set shiftwidth=2
 set softtabstop=2
 set nowrap " kikoo (lol)"
 
-noremap <silent> <S-PageDown> <Esc>:tabm +1<CR>
-noremap <silent> <S-PageUp> <Esc>:tabm -1<CR>
+noremap <silent> <C-S-Right> <Esc>:tabm +1<CR>
+noremap <silent> <C-S-Left> <Esc>:tabm -1<CR>
 
 "get out of insert mode more quickly
 "you'd have to be really unlucky to
@@ -123,8 +122,19 @@ let g:ale_fixers = {
 \ 'javascript': ['eslint'],
 \ 'typescript': ['tslint', 'eslint'],
 \ 'typescriptreact': ['tslint', 'eslint'],
-\ 'vue': ['prettier']
+\ 'vue': ['prettier'],
+\ 'python': ['ruff', 'ruff_format', 'isort', 'black']
 \}
+
+"let g:ale_linters = {
+"\ 'python': ['mypy', 'ruff', 'pyright']
+"\}
+
+
+"let g:ale_fix_on_save = 1
+
+let g:ale_python_auto_poetry = 1
+
 nmap <silent> µ <Esc>:ALEGoToDefinitionInTab<cr>
 nmap <silent> K <Esc>:ALEHover<cr>
 
@@ -143,4 +153,11 @@ nmap <leader>t <Esc>:FZF<cr>
 
 "because it doesn't work earlier"
 "set relativenumber
+
+
+
+highlight Normal guibg=#2b0f3a
+highlight Visual guifg=#2b0f3a guibg=#e2f77e
+highlight Cursor guifg=#2b0f3a guibg=#e2f77e
+highlight iCursor guifg=#2b0f3a guibg=#e2f77e
 
