@@ -14,7 +14,7 @@ filetype indent on
 "# VIM-PLUG SETUP
 call plug#begin()
 Plug 'preservim/nerdtree'
-Plug 'junegunn/fzf', { 'tag': '0.53.0' }
+Plug 'junegunn/fzf', { 'tag': '0.44.1' }
 Plug 'Floby/snipmate-nodejs'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
